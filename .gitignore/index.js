@@ -1,37 +1,4 @@
-const Discord = require("discord.js");
-const bot = new Discord.Client();
-const config = require("./config.json");
-const prefix = config.prefix;
-const botname = "DynastieGen";
-const prefix1 = "+";
-var fs = require("fs");
-var lineReader = require("line-reader");
-var async = require("async");
-const firstline = require("firstline");
-const generated = new Set();
-var os = require("os");
-var express = require('express');
-var app = express();
-const chalk = require('chalk');
-
-  bot.on('ready', msg => {
-  console.log("");                                   
-  console.log((chalk.cyan(`                                            #####                                      #####                `)));
-  console.log((chalk.cyan(`                                           #     #   ##   #        ##    ####  #    # #     # ###### #    # `)));
-  console.log((chalk.cyan(`                                           #        #  #  #       #  #  #    # #   #  #       #      ##   # `)));
-  console.log((chalk.cyan(`                                           #  #### #    # #      #    # #      ####   #  #### #####  # #  # `)));
-  console.log((chalk.cyan(`                                           #     # ###### #      ###### #      #  #   #     # #      #  # # `)));
-  console.log((chalk.cyan(`                                           #     # #    # #      #    # #    # #   #  #     # #      #   ## `)));
-  console.log((chalk.cyan(`                                            #####  #    # ###### #    #  ####  #    #  #####  ###### #    # `)));
-  console.log("");                                  
-  console.log((chalk.yellow(`                                                               Crée par " 𝘼𝙭𝙚𝙡𝙇𝙖𝘿 🌙#0611 !`)));  
-  console.log((chalk.yellow(`                                                                © 2020 DynastieGen, Inc.`))); 
-  console.log("");                                   
-  console.log((chalk.red(`                                                         Discord: https://discord.gg/T82JVMnMas`)));   
-  console.log((chalk.red(`                                                       Twitter: `)));   
-  console.log((chalk.red(`                                                        Github: `)));   
-  console.log((chalk.red(`                                                        Youtube: https://youtube.com/ABZmultigaming`)));   
-  console.log("");                                  
+               
 
   console.log(`Statistiques globales : \n\nLe bot a un total de ${bot.guilds.cache.size} serveurs. \nPour un total de ${bot.users.cache.size} membres.`)
   console.log("Connecté en tant que " + bot.user.id + " | Prefix : " + prefix1 + " | Nombre de Serveurs "+ bot.guilds.cache.size +" | Nombres de salons "+ bot.channels.cache.size +" | Utilisateur totaux "+ bot.users.cache.size +" | Nombre d'emojis totaux "+ bot.emojis.cache.size +'');
